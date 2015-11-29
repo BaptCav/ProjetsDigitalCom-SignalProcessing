@@ -19,14 +19,21 @@ function t_samp = sync(mf, b_train, Q, t_start, t_end)
 % Output:
 %   t_samp = sampling instant for first symbol
 
-%%Computing the matrix of the correlations beetween btrain and
+
+bqpsk=qpsk(b_train);
+ 
+%%Computing the matrix of the covariances beetween btrain and
 %%mf(t:t+length)
-b=qpsk(b_train);
-n = length(b);
-T=t_start-t_end;
-for i=0:T-1
-    C=cov(b,mf(t_start+i:t_start+i+n));
-    m(i)=C(1,1);
+n = length(bqpsk);
+T=t_end-t_start;
+m=zeros(1,T);
+for i=1:T
+    C=cov(bqpsk,mf(t_start+(i-1):Q:t_start+(i-1)+Q*n-1));%% Consider the downsampled "mf" signal that would be used in further steps to find the best Tsamp
+    m(i)=C(2,1);
 end
-[mx,t_samp]=max(m(i)^2);
+
+ %%We then choose the time sample that maximise the cross covariances (use
+ %%covariance to cancel eventual DC ofsets off your channel)
+[M,tsamp]=max(abs(m));
+t_samp=t_start+tsamp-1;
 

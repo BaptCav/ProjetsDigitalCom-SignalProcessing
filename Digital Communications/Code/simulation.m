@@ -51,10 +51,8 @@ for snr_point = 1:length(EbN0_db)
  
     % Multiplex training and data into one sequence.
     b = [b_guard b_train b_data b_guard];
-    
     % Map bits into complex-valued QPSK symbols.
     d = qpsk(b);
-
     % Upsample the signal, apply pulse shaping.
     tx = upfirdn(d, pulse_shape, Q, 1);
 
