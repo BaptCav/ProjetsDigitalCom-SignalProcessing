@@ -20,5 +20,22 @@ function bhat = detect(r)
 %
 % Output:
 %   bhat  = bits {0,1} corresponding to the QPSK symbols
-
+n= length(r);
+for i= 1:2:2*n
+    if(real(r)>0 && imag(i)>0)
+        bhat(i)=0;
+        bhat(i+1)=0;
+    else if(real(r)<0 && imag(i)>0)
+        bhat(i)=1;
+        bhat(i+1)=0;
+        else if(real(r)<0 && imag(i)<0)
+        bhat(i)=1;
+        bhat(i+1)=1;
+            else
+                bhat(i)=0;
+                bhat(i+1)=1;
+            end
+        end
+    end
+end
 

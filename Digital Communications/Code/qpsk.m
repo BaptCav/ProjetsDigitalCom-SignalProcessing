@@ -27,5 +27,20 @@ function d = qpsk(b)
 %
 % Output:
 %   d = complex-valued QPSK symbols
-
+N= length(b);
+d=zeros(1:N);
+for i =1:2:N
+    if(b(i)==1 && b(i+1)==1)
+    d(i)= -1-j;
+    else if(b(i)==0 && b(i+1)==1)
+            d(i)=1-j;
+        else if (b(i)==0 && b(i+1)==0)
+               d(i)=1+j;
+            else
+                d(i) =j-1;
+            end
+        end
+    end
+end
+d=1/sqrt(2)*d;
 

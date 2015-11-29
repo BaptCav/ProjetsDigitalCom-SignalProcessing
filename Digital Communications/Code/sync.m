@@ -19,5 +19,14 @@ function t_samp = sync(mf, b_train, Q, t_start, t_end)
 % Output:
 %   t_samp = sampling instant for first symbol
 
-
+%%Computing the matrix of the correlations beetween btrain and
+%%mf(t:t+length)
+b=qpsk(b_train);
+n = length(b);
+T=t_start-t_end;
+for i=0:T-1
+    C=cov(b,mf(t_start+i:t_start+i+n));
+    m(i)=C(1,1);
+end
+[mx,t_samp]=max(m(i)^2);
 
