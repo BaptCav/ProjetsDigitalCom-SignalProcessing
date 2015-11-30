@@ -22,10 +22,10 @@ phihat=0;
 %for loop in order to estimate the phase that minimizes the distance
 %beetween the QPSK Mapped training sequence and the first bits received in
 %the synchronized signal
-for p=0:0.01:2*pi
+for p=-pi:0.01:pi
     rprime=rt*exp(-1i*p);
     eprime=norm(rprime-bqpsk);
-    if(eprime<e)%%If our new error if lower we take the considered phase
+    if(eprime<e)%If our new error if lower we take the considered phase
         e=eprime;
         phihat=p;
     end
