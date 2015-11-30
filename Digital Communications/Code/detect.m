@@ -20,24 +20,23 @@ function bhat = detect(r)
 %
 % Output:
 %   bhat  = bits {0,1} corresponding to the QPSK symbols
-n= length(r);
 
-%%Simple case mapping based on the decisions zones mentionned above
-for i= 1:2:2*n
-    if(real(r(ceil((i+1)/2)))>0 && imag(r(ceil((i+1)/2)))>0)
-        bhat(i)=0;
-        bhat(i+1)=0;
-    else if((real(r(ceil((i+1)/2)))<0) && (imag(r(ceil((i+1)/2)))>0))
-        bhat(i)=1;
-        bhat(i+1)=0;
-        else if((real(r(ceil((i+1)/2)))<0) && (imag(r(ceil((i+1)/2)))<0))
-        bhat(i)=1;
-        bhat(i+1)=1;
-            else
-                bhat(i)=0;
-                bhat(i+1)=1;
-            end
-        end
+n= length(r);
+bhat=zeros(1,2*n);
+%Simple case mapping based on the decisions regions mentionned above
+for i= 1:n
+    if(real(r(i))>0 && imag(r(i))>0) %00
+        bhat(2*i-1)=0;
+        bhat(2*i)=0;
+    elseif(real(r(i))<0 && imag(r(i))>0) %10
+        bhat(2*i-1)=1;
+        bhat(2*i)=0;
+    elseif(real(r(i))<0 && imag(r(i))<0) %11
+        bhat(2*i-1)=1;
+        bhat(2*i)=1;
+    else %01
+        bhat(2*i-1)=0;
+        bhat(2*i)=1;
     end
 end
 

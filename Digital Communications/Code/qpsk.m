@@ -27,20 +27,23 @@ function d = qpsk(b)
 %
 % Output:
 %   d = complex-valued QPSK symbols
+
+%Add a 0 the end if the sequence is not even
+if(mod(length(b),2)==1)
+    b=[b,0];
+end
+
 N= length(b);
-d=zeros(1,ceil(N/2));
-for i =1:2:N
-    if(b(i)==1 && b(i+1)==1)
-    d(ceil(i/2))= -1-j;
-    else if(b(i)==0 && b(i+1)==1)
-            d(ceil(i/2))=1-j;
-        else if (b(i)==0 && b(i+1)==0)
-               d(ceil(i/2))=1+j;
-            else
-                d(ceil(i/2)) =j-1;
-                
-            end
-        end
+d=zeros(1,N/2);
+for i =1:(N/2)
+    if(b(2*i-1)==1 && b(2*i)==1) %11
+        d(i)= -1-1i;
+    elseif(b(2*i-1)==0 && b(2*i)==1) %01
+        d(i)=1-1i;
+    elseif (b(2*i-1)==0 && b(2*i)==0) %00
+        d(i)=1+1i;
+    else %10
+        d(i)=1i-1;
     end
 end
 d=1/sqrt(2)*d;

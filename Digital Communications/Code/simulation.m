@@ -55,7 +55,7 @@ for snr_point = 1:length(EbN0_db)
     d = qpsk(b);
     % Upsample the signal, apply pulse shaping.
     tx = upfirdn(d, pulse_shape, Q, 1);
-
+    
     %%%
     %%% AWGN Channel
     %%%
@@ -64,7 +64,7 @@ for snr_point = 1:length(EbN0_db)
     sigma_sqr = norm(pulse_shape)^2 / nr_bits_per_symbol / 10^(EbN0_db(snr_point)/10);
 
     % Create noise vector.
-    n = sqrt(sigma_sqr/2)*(randn(size(tx))+j*randn(size(tx)));
+    n = sqrt(sigma_sqr/2)*(randn(size(tx))+1i*randn(size(tx)));
 
     % Received signal.
     rx = tx + n;
@@ -90,7 +90,7 @@ for snr_point = 1:length(EbN0_db)
 
     % Phase estimation and correction.
     phihat = phase_estimation(r, b_train);
-    r = r * exp(-j*phihat);
+    r = r * exp(-1i*phihat);
         
     % Make decisions. Note that dhat will include training sequence bits
     % as well.
@@ -111,4 +111,4 @@ end
 
 % Compute the BER. 
 BER = nr_errors / nr_data_bits / nr_blocks;
-
+disp(BER);

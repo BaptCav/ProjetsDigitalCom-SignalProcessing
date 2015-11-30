@@ -1,0 +1,71 @@
+\documentclass[a4paper,12pt]{article}
+
+\usepackage[latin1]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[francais]{babel}
+\usepackage[top=2cm, bottom=2cm, left=2cm, right=2cm]{geometry}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx} 
+\usepackage{caption}
+\usepackage{dsfont}
+\usepackage{verbatim}
+\usepackage{pdfpages}
+
+\renewcommand{\thepart}{}
+\renewcommand{\thesection}{\arabic{section}}
+\renewcommand{\thesubsection}{\arabic{section}.\arabic{subsection}}
+
+%-------------------------------------------------------------------------------
+\begin{document}
+
+%Include cover
+\includepdf[pages={1}]{Cover_filled.pdf}
+
+%Abstract
+\clearpage
+
+\thispagestyle{empty}
+\section*{\centering Abstract}
+\vspace{1cm}
+jflsdjqfmljqskldj
+
+%-----------------------------------------------------------------------------------
+%Partie 1
+\clearpage
+\section{Cas d'une file d'attente, un premier schéma}
+
+
+
+
+%Q1.1
+\subsection{}
+
+%------------------------------------------------------------------------------------------------------
+%Appendix
+\clearpage
+\part*{Appendix}
+\setcounter{section}{0}
+
+\section*{Additional plots}
+\renewcommand{\thesubsection}{\arabic{subsection}}
+\setcounter{subsection}{0}
+
+%------------------------------------------------------------------------------------
+%Matlab code
+\clearpage
+\renewcommand{\thesubsection}{\arabic{subsection}}
+\section*{Matlab Code}
+\setcounter{subsection}{0}
+\subsection{Detect.m}
+\begin{verbatim}
+CODE
+\end{verbatim}
+
+
+
+
+
+
+%---------------------------------------------------------------------------------------------------------
+\end{document}

@@ -21,19 +21,15 @@ function t_samp = sync(mf, b_train, Q, t_start, t_end)
 
 
 bqpsk=qpsk(b_train);
- 
-%%Computing the matrix of the covariances beetween btrain and
-%%mf(t:t+length)
 n = length(bqpsk);
 T=t_end-t_start;
-m=zeros(1,T);
+m=zeros(1,T); %Correlation values for different lag (t_start to t_end-1)
 for i=1:T
-    C=cov(bqpsk,mf(t_start+(i-1):Q:t_start+(i-1)+Q*n-1));%% Consider the downsampled "mf" signal that would be used in further steps to find the best Tsamp
-    m(i)=C(2,1);
+    % Correlation of replica of training sequence with shifted matched filtered signal 
+    m(i)=sum(conj(mf(t_start+(i-1):Q:t_start+(i-1)+Q*n-1)).*bqpsk,2); 
 end
 
- %%We then choose the time sample that maximise the cross covariances (use
- %%covariance to cancel eventual DC ofsets off your channel)
-[M,tsamp]=max(abs(m));
+% We then choose the time sample that maximise the correlation
+[~,tsamp]=max(abs(m));
 t_samp=t_start+tsamp-1;
 
