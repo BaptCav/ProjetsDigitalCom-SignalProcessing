@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.7.1)  30 NOV 2015 22:49
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.7.1)  1 DEC 2015 11:51
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -224,21 +224,37 @@ File: pppdftex.def 2013/08/25 v0.4v Pdfpages driver for pdfTeX (AM)
 \AM@toc@title=\toks23
 \c@AM@survey=\count107
 \AM@templatesizebox=\box29
+)
+(/usr/share/texlive/texmf-dist/tex/latex/subfig/subfig.sty
+Package: subfig 2005/06/28 ver: 1.3 subfig package
+\c@KVtest=\count108
+\sf@farskip=\skip49
+\sf@captopadj=\dimen131
+\sf@capskip=\skip50
+\sf@nearskip=\skip51
+\c@subfigure=\count109
+\c@subfigure@save=\count110
+\c@lofdepth=\count111
+\c@subtable=\count112
+\c@subtable@save=\count113
+\c@lotdepth=\count114
+\sf@top=\skip52
+\sf@bottom=\skip53
 ) (./Rapport.aux)
 \openout1 = `Rapport.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -276,16 +292,16 @@ LaTeX Font Info:    ... okay on input line 17.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count108
-\scratchdimen=\dimen131
+\scratchcounter=\count115
+\scratchdimen=\dimen132
 \scratchbox=\box30
-\nofMPsegments=\count109
-\nofMParguments=\count110
+\nofMPsegments=\count116
+\nofMParguments=\count117
 \everyMPshowfont=\toks24
-\MPscratchCnt=\count111
-\MPscratchDim=\dimen132
-\MPnumerator=\count112
-\makeMPintoPDFobject=\count113
+\MPscratchCnt=\count118
+\MPscratchDim=\dimen133
+\MPnumerator=\count119
+\makeMPintoPDFobject=\count120
 \everyMPtoPDFconversion=\toks25
 ) (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
@@ -332,48 +348,49 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: End \AtBeginDocument code.
 \AtBeginShipoutBox=\box31
 
 <Cover_filled.pdf, id=1, 597.23125pt x 845.1575pt>
 File: Cover_filled.pdf Graphic file (type pdf)
  <use Cover_filled.pdf>
-Package pdftex.def Info: Cover_filled.pdf used on input line 20.
+Package pdftex.def Info: Cover_filled.pdf used on input line 21.
 (pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
 File: Cover_filled.pdf Graphic file (type pdf)
 
 <use Cover_filled.pdf>
-Package pdftex.def Info: Cover_filled.pdf used on input line 20.
+Package pdftex.def Info: Cover_filled.pdf used on input line 21.
 (pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
 
 <Cover_filled.pdf, id=4, page=1, 597.23125pt x 845.1575pt>
 File: Cover_filled.pdf Graphic file (type pdf)
 
 <use Cover_filled.pdf, page 1>
-Package pdftex.def Info: Cover_filled.pdf, page1 used on input line 20.
+Package pdftex.def Info: Cover_filled.pdf, page1 used on input line 21.
 (pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
 File: Cover_filled.pdf Graphic file (type pdf)
  <use Cover_filled.pdf, page 1>
-Package pdftex.def Info: Cover_filled.pdf, page1 used on input line 20.
+Package pdftex.def Info: Cover_filled.pdf, page1 used on input line 21.
 (pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
 File: Cover_filled.pdf Graphic file (type pdf)
 
 <use Cover_filled.pdf, page 1>
-Package pdftex.def Info: Cover_filled.pdf, page1 used on input line 20.
+Package pdftex.def Info: Cover_filled.pdf, page1 used on input line 21.
 (pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
 File: Cover_filled.pdf Graphic file (type pdf)
  <use Cover_filled.pdf, page 1>
-Package pdftex.def Info: Cover_filled.pdf, page1 used on input line 20.
+Package pdftex.def Info: Cover_filled.pdf, page1 used on input line 21.
 (pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
 File: Cover_filled.pdf Graphic file (type pdf)
 
 <use Cover_filled.pdf, page 1>
-Package pdftex.def Info: Cover_filled.pdf, page1 used on input line 20.
+Package pdftex.def Info: Cover_filled.pdf, page1 used on input line 21.
 (pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
  [1
 
- <./Cover_filled.pdf{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}>] [2]
-<Gray_coded_QPSK.png, id=38, 576.1525pt x 489.83pt>
+ <./Cover_filled.pdf{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}>]
+<Gray_coded_QPSK.png, id=33, 576.1525pt x 489.83pt>
 File: Gray_coded_QPSK.png Graphic file (type png)
  <use Gray_coded_QPSK.png>
 Package pdftex.def Info: Gray_coded_QPSK.png used on input line 37.
@@ -388,14 +405,14 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 42.
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-<BER_Exact-Sim.png, id=39, 787.44188pt x 401.24907pt>
+<BER_Exact-Sim.png, id=34, 787.44188pt x 401.24907pt>
 File: BER_Exact-Sim.png Graphic file (type png)
  <use BER_Exact-Sim.png>
 Package pdftex.def Info: BER_Exact-Sim.png used on input line 51.
 (pdftex.def)             Requested size: 236.23438pt x 120.37564pt.
 
-[3 <./Gray_coded_QPSK.png> <./BER_Exact-Sim.png (PNG copy)>]
-<BER_SyncError.png, id=47, 787.44188pt x 418.56375pt>
+[2 <./Gray_coded_QPSK.png> <./BER_Exact-Sim.png (PNG copy)>]
+<BER_SyncError.png, id=44, 787.44188pt x 418.56375pt>
 File: BER_SyncError.png Graphic file (type png)
  <use BER_SyncError.png>
 Package pdftex.def Info: BER_SyncError.png used on input line 68.
@@ -405,7 +422,7 @@ Overfull \hbox (57.94667pt too wide) in paragraph at lines 68--69
  [] 
  []
 
-<BER_PhaseError.png, id=48, 787.44188pt x 415.5525pt>
+<BER_PhaseError.png, id=45, 787.44188pt x 415.5525pt>
 File: BER_PhaseError.png Graphic file (type png)
  <use BER_PhaseError.png>
 Package pdftex.def Info: BER_PhaseError.png used on input line 76.
@@ -415,44 +432,134 @@ Overfull \hbox (57.94667pt too wide) in paragraph at lines 76--77
  [] 
  []
 
-<SynError.png, id=49, 787.44188pt x 404.26031pt>
-File: SynError.png Graphic file (type png)
- <use SynError.png>
-Package pdftex.def Info: SynError.png used on input line 93.
-(pdftex.def)             Requested size: 393.71997pt x 202.12965pt.
 
-<PhaseError.png, id=50, 787.44188pt x 409.53pt>
+Underfull \hbox (badness 10000) in paragraph at lines 83--84
+
+ []
+
+<Constellation_SNR0.png, id=46, 719.68875pt x 437.38406pt>
+File: Constellation_SNR0.png Graphic file (type png)
+
+<use Constellation_SNR0.png>
+Package pdftex.def Info: Constellation_SNR0.png used on input line 88.
+(pdftex.def)             Requested size: 169.29684pt x 102.88538pt.
+
+<Constellation_SNR5.png, id=47, 719.68875pt x 431.36156pt>
+File: Constellation_SNR5.png Graphic file (type png)
+
+<use Constellation_SNR5.png>
+Package pdftex.def Info: Constellation_SNR5.png used on input line 89.
+(pdftex.def)             Requested size: 169.29684pt x 101.4687pt.
+
+<Constellation_SNR10.png, id=48, 719.68875pt x 434.37282pt>
+File: Constellation_SNR10.png Graphic file (type png)
+
+<use Constellation_SNR10.png>
+Package pdftex.def Info: Constellation_SNR10.png used on input line 90.
+(pdftex.def)             Requested size: 169.29684pt x 102.17703pt.
+
+Overfull \hbox (24.19366pt too wide) in paragraph at lines 88--91
+[][][][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 97--98
+
+ []
+
+[3 <./BER_SyncError.png (PNG copy)> <./BER_PhaseError.png (PNG copy)> <./Conste
+llation_SNR0.png (PNG copy)> <./Constellation_SNR5.png (PNG copy)> <./Constella
+tion_SNR10.png (PNG copy)>] <SynError.png, id=54, 787.44188pt x 404.26031pt>
+File: SynError.png Graphic file (type png)
+
+<use SynError.png>
+Package pdftex.def Info: SynError.png used on input line 105.
+(pdftex.def)             Requested size: 275.60878pt x 141.49323pt.
+
+Overfull \hbox (57.94667pt too wide) in paragraph at lines 105--106
+ [] 
+ []
+
+<PhaseError.png, id=55, 787.44188pt x 409.53pt>
 File: PhaseError.png Graphic file (type png)
  <use PhaseError.png>
-Package pdftex.def Info: PhaseError.png used on input line 103.
-(pdftex.def)             Requested size: 393.71997pt x 204.7645pt.
- [4 <./BER_SyncError.png (PNG copy)> <./BER_PhaseError.png (PNG copy)>] [5 <./S
-ynError.png (PNG copy)> <./PhaseError.png (PNG copy)>] (./Rapport.bbl) [6
+Package pdftex.def Info: PhaseError.png used on input line 113.
+(pdftex.def)             Requested size: 275.60878pt x 143.33765pt.
 
-] [7
+Overfull \hbox (57.94667pt too wide) in paragraph at lines 113--114
+ [] 
+ []
 
-]
-(./Rapport.aux) ) 
+
+Underfull \hbox (badness 10000) in paragraph at lines 121--122
+
+ []
+
+<Training_sync.png, id=56, 719.68875pt x 440.39531pt>
+File: Training_sync.png Graphic file (type png)
+ <use Training_sync.png>
+Package pdftex.def Info: Training_sync.png used on input line 128.
+(pdftex.def)             Requested size: 251.89484pt x 154.14066pt.
+
+Overfull \hbox (34.23273pt too wide) in paragraph at lines 128--129
+ [] 
+ []
+
+<Training_phase.png, id=57, 719.68875pt x 443.40656pt>
+File: Training_phase.png Graphic file (type png)
+
+<use Training_phase.png>
+Package pdftex.def Info: Training_phase.png used on input line 136.
+(pdftex.def)             Requested size: 251.89484pt x 155.19461pt.
+
+Overfull \hbox (34.23273pt too wide) in paragraph at lines 136--137
+ [] 
+ []
+
+<Training_seq10.png, id=58, 719.68875pt x 446.41782pt>
+File: Training_seq10.png Graphic file (type png)
+
+<use Training_seq10.png>
+Package pdftex.def Info: Training_seq10.png used on input line 146.
+(pdftex.def)             Requested size: 266.03474pt x 165.02214pt.
+ <Training_seq20.png, id=59, 719.68875pt x 452.4403pt>
+File: Training_seq20.png Graphic file (type png)
+
+<use Training_seq20.png>
+Package pdftex.def Info: Training_seq20.png used on input line 147.
+(pdftex.def)             Requested size: 266.03474pt x 167.24841pt.
+
+Overfull \hbox (48.37262pt too wide) in paragraph at lines 146--148
+[][][] 
+ []
+
+[4 <./SynError.png (PNG copy)> <./PhaseError.png (PNG copy)> <./Training_sync.p
+ng (PNG copy)> <./Training_phase.png (PNG copy)>] (./Rapport.bbl) [5 <./Trainin
+g_seq10.png (PNG copy)> <./Training_seq20.png (PNG copy)>] [6
+
+] (./Rapport.aux) ) 
 Here is how much of TeX's memory you used:
- 5211 strings out of 493303
- 76128 string characters out of 6139924
- 152427 words of memory out of 5000000
- 8584 multiletter control sequences out of 15000+600000
- 10012 words of font info for 38 fonts, out of 8000000 for 9000
+ 5408 strings out of 493303
+ 79492 string characters out of 6139924
+ 156351 words of memory out of 5000000
+ 8768 multiletter control sequences out of 15000+600000
+ 11711 words of font info for 46 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 39i,18n,45p,494b,413s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10
-.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><
-/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/sh
-are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/tex
-live/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on Rapport.pdf (7 pages, 222213 bytes).
+ 39i,18n,47p,513b,413s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex
+10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb
+></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr
+/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/
+texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmtt12.pfb>
+Output written on Rapport.pdf (6 pages, 456432 bytes).
 PDF statistics:
- 93 PDF objects out of 1000 (max. 8388607)
- 56 compressed objects within 1 object stream
+ 103 PDF objects out of 1000 (max. 8388607)
+ 58 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 51 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 86 words of extra memory for PDF output out of 10000 (max. 10000000)
 
