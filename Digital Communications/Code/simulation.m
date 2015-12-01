@@ -7,7 +7,7 @@
 clear
 
 % Initialization
-EbN0_db = 0:10;                     % Eb/N0 values to simulate (in dB)
+EbN0_db = -5:20;                     % Eb/N0 values to simulate (in dB)
 nr_bits_per_symbol = 2;             % Corresponds to k in the report
 nr_guard_bits = 10;                 % Size of guard sequence (in nr bits)
                                     % Guard bits are appended to transmitted bits so
@@ -15,7 +15,7 @@ nr_guard_bits = 10;                 % Size of guard sequence (in nr bits)
                                     % of received sequence do not affect the samples
                                     % which contain the training and data symbols.
 nr_data_bits = 1000;                % Size of each data sequence (in nr bits)
-nr_training_bits = 20;             % Size of training sequence (in nr bits)
+nr_training_bits = 50;             % Size of training sequence (in nr bits)
 nr_blocks = 100;                     % The number of blocks to simulate
 Q = 8;                              % Number of samples per symbol in baseband
 
@@ -57,9 +57,11 @@ for snr_point = 1:length(EbN0_db)
 
         % Multiplex training and data into one sequence.
         b = [b_guard b_train b_data b_guard];
+        
         % Map bits into complex-valued QPSK symbols.
         d = qpsk(b);
-
+        %d = diff_qpsk(b); %Use differential moduulation, don't forget to change the detection as well
+        
         % Upsample the signal, apply pulse shaping.
         tx = upfirdn(d, pulse_shape, Q, 1);
 
@@ -76,6 +78,10 @@ for snr_point = 1:length(EbN0_db)
         % Received signal.
         rx = tx + n;
 
+        % Added phase increase
+        %add_phase=exp(1i*(0:(pi/4/(length(rx)-1)):(pi/4)));
+        %rx = rx.*add_phase;
+        
         %%%
         %%% Receiver
         %%%
@@ -112,7 +118,8 @@ for snr_point = 1:length(EbN0_db)
         % Make decisions. Note that dhat will include training sequence bits
         % as well.
         bhat = detect(r);
-
+        %bhat = diff_detect(r); %Use differential detection
+        
         % Count errors. Note that only the data bits and not the training bits
         % are included in the comparison. The last data bits are missing as well
         % since the whole impulse response due to the last symbol is not
@@ -134,9 +141,9 @@ square_phase_error = sqrt(square_phase_error/nr_blocks);
 BER_forced = nr_errors_forced / nr_data_bits / nr_blocks;
 
 %Display BER infos
-% disp(BER);
-% figure(2)
-% plot(EbN0_db,BER,'b')
+disp(BER);
+figure(2)
+plot(EbN0_db,BER,'b')
 % hold on;
 % plot(EbN0_db,1-normcdf(sqrt(2*10.^(EbN0_db/10))),'r');
 % hold off;

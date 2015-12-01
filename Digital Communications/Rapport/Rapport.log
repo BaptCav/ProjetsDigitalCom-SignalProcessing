@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.7.1)  1 DEC 2015 11:51
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.7.1)  1 DEC 2015 19:18
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -393,14 +393,14 @@ Package pdftex.def Info: Cover_filled.pdf, page1 used on input line 21.
 <Gray_coded_QPSK.png, id=33, 576.1525pt x 489.83pt>
 File: Gray_coded_QPSK.png Graphic file (type png)
  <use Gray_coded_QPSK.png>
-Package pdftex.def Info: Gray_coded_QPSK.png used on input line 37.
+Package pdftex.def Info: Gray_coded_QPSK.png used on input line 41.
 (pdftex.def)             Requested size: 115.22845pt x 97.96426pt.
-LaTeX Font Info:    Try loading font information for U+msa on input line 42.
+LaTeX Font Info:    Try loading font information for U+msa on input line 46.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 42.
+LaTeX Font Info:    Try loading font information for U+msb on input line 46.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -408,32 +408,32 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 <BER_Exact-Sim.png, id=34, 787.44188pt x 401.24907pt>
 File: BER_Exact-Sim.png Graphic file (type png)
  <use BER_Exact-Sim.png>
-Package pdftex.def Info: BER_Exact-Sim.png used on input line 51.
+Package pdftex.def Info: BER_Exact-Sim.png used on input line 55.
 (pdftex.def)             Requested size: 236.23438pt x 120.37564pt.
 
 [2 <./Gray_coded_QPSK.png> <./BER_Exact-Sim.png (PNG copy)>]
 <BER_SyncError.png, id=44, 787.44188pt x 418.56375pt>
 File: BER_SyncError.png Graphic file (type png)
  <use BER_SyncError.png>
-Package pdftex.def Info: BER_SyncError.png used on input line 68.
+Package pdftex.def Info: BER_SyncError.png used on input line 72.
 (pdftex.def)             Requested size: 275.60878pt x 146.4995pt.
 
-Overfull \hbox (57.94667pt too wide) in paragraph at lines 68--69
+Overfull \hbox (57.94667pt too wide) in paragraph at lines 72--73
  [] 
  []
 
 <BER_PhaseError.png, id=45, 787.44188pt x 415.5525pt>
 File: BER_PhaseError.png Graphic file (type png)
  <use BER_PhaseError.png>
-Package pdftex.def Info: BER_PhaseError.png used on input line 76.
+Package pdftex.def Info: BER_PhaseError.png used on input line 80.
 (pdftex.def)             Requested size: 275.60878pt x 145.44554pt.
 
-Overfull \hbox (57.94667pt too wide) in paragraph at lines 76--77
+Overfull \hbox (57.94667pt too wide) in paragraph at lines 80--81
  [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 83--84
+Underfull \hbox (badness 10000) in paragraph at lines 87--88
 
  []
 
@@ -441,29 +441,29 @@ Underfull \hbox (badness 10000) in paragraph at lines 83--84
 File: Constellation_SNR0.png Graphic file (type png)
 
 <use Constellation_SNR0.png>
-Package pdftex.def Info: Constellation_SNR0.png used on input line 88.
+Package pdftex.def Info: Constellation_SNR0.png used on input line 92.
 (pdftex.def)             Requested size: 169.29684pt x 102.88538pt.
 
 <Constellation_SNR5.png, id=47, 719.68875pt x 431.36156pt>
 File: Constellation_SNR5.png Graphic file (type png)
 
 <use Constellation_SNR5.png>
-Package pdftex.def Info: Constellation_SNR5.png used on input line 89.
+Package pdftex.def Info: Constellation_SNR5.png used on input line 93.
 (pdftex.def)             Requested size: 169.29684pt x 101.4687pt.
 
 <Constellation_SNR10.png, id=48, 719.68875pt x 434.37282pt>
 File: Constellation_SNR10.png Graphic file (type png)
 
 <use Constellation_SNR10.png>
-Package pdftex.def Info: Constellation_SNR10.png used on input line 90.
+Package pdftex.def Info: Constellation_SNR10.png used on input line 94.
 (pdftex.def)             Requested size: 169.29684pt x 102.17703pt.
 
-Overfull \hbox (24.19366pt too wide) in paragraph at lines 88--91
+Overfull \hbox (24.19366pt too wide) in paragraph at lines 92--95
 [][][][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 97--98
+Underfull \hbox (badness 10000) in paragraph at lines 101--102
 
  []
 
@@ -473,35 +473,35 @@ tion_SNR10.png (PNG copy)>] <SynError.png, id=54, 787.44188pt x 404.26031pt>
 File: SynError.png Graphic file (type png)
 
 <use SynError.png>
-Package pdftex.def Info: SynError.png used on input line 105.
+Package pdftex.def Info: SynError.png used on input line 109.
 (pdftex.def)             Requested size: 275.60878pt x 141.49323pt.
 
-Overfull \hbox (57.94667pt too wide) in paragraph at lines 105--106
+Overfull \hbox (57.94667pt too wide) in paragraph at lines 109--110
  [] 
  []
 
 <PhaseError.png, id=55, 787.44188pt x 409.53pt>
 File: PhaseError.png Graphic file (type png)
  <use PhaseError.png>
-Package pdftex.def Info: PhaseError.png used on input line 113.
+Package pdftex.def Info: PhaseError.png used on input line 117.
 (pdftex.def)             Requested size: 275.60878pt x 143.33765pt.
 
-Overfull \hbox (57.94667pt too wide) in paragraph at lines 113--114
+Overfull \hbox (57.94667pt too wide) in paragraph at lines 117--118
  [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 121--122
+Underfull \hbox (badness 10000) in paragraph at lines 125--126
 
  []
 
 <Training_sync.png, id=56, 719.68875pt x 440.39531pt>
 File: Training_sync.png Graphic file (type png)
  <use Training_sync.png>
-Package pdftex.def Info: Training_sync.png used on input line 128.
+Package pdftex.def Info: Training_sync.png used on input line 132.
 (pdftex.def)             Requested size: 251.89484pt x 154.14066pt.
 
-Overfull \hbox (34.23273pt too wide) in paragraph at lines 128--129
+Overfull \hbox (34.23273pt too wide) in paragraph at lines 132--133
  [] 
  []
 
@@ -509,10 +509,10 @@ Overfull \hbox (34.23273pt too wide) in paragraph at lines 128--129
 File: Training_phase.png Graphic file (type png)
 
 <use Training_phase.png>
-Package pdftex.def Info: Training_phase.png used on input line 136.
+Package pdftex.def Info: Training_phase.png used on input line 140.
 (pdftex.def)             Requested size: 251.89484pt x 155.19461pt.
 
-Overfull \hbox (34.23273pt too wide) in paragraph at lines 136--137
+Overfull \hbox (34.23273pt too wide) in paragraph at lines 140--141
  [] 
  []
 
@@ -520,46 +520,72 @@ Overfull \hbox (34.23273pt too wide) in paragraph at lines 136--137
 File: Training_seq10.png Graphic file (type png)
 
 <use Training_seq10.png>
-Package pdftex.def Info: Training_seq10.png used on input line 146.
+Package pdftex.def Info: Training_seq10.png used on input line 150.
 (pdftex.def)             Requested size: 266.03474pt x 165.02214pt.
  <Training_seq20.png, id=59, 719.68875pt x 452.4403pt>
 File: Training_seq20.png Graphic file (type png)
 
 <use Training_seq20.png>
-Package pdftex.def Info: Training_seq20.png used on input line 147.
+Package pdftex.def Info: Training_seq20.png used on input line 151.
 (pdftex.def)             Requested size: 266.03474pt x 167.24841pt.
 
-Overfull \hbox (48.37262pt too wide) in paragraph at lines 146--148
+Overfull \hbox (48.37262pt too wide) in paragraph at lines 150--152
 [][][] 
  []
 
 [4 <./SynError.png (PNG copy)> <./PhaseError.png (PNG copy)> <./Training_sync.p
-ng (PNG copy)> <./Training_phase.png (PNG copy)>] (./Rapport.bbl) [5 <./Trainin
-g_seq10.png (PNG copy)> <./Training_seq20.png (PNG copy)>] [6
+ng (PNG copy)> <./Training_phase.png (PNG copy)>]
+Underfull \hbox (badness 10000) in paragraph at lines 161--162
 
-] (./Rapport.aux) ) 
+ []
+
+<BER_phase_increase.png, id=63, 719.68875pt x 461.47406pt>
+File: BER_phase_increase.png Graphic file (type png)
+
+<use BER_phase_increase.png>
+Package pdftex.def Info: BER_phase_increase.png used on input line 168.
+(pdftex.def)             Requested size: 359.84349pt x 230.73645pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 175--176
+
+ []
+
+[5 <./Training_seq10.png (PNG copy)> <./Training_seq20.png (PNG copy)> <./BER_p
+hase_increase.png (PNG copy)>]
+<BER_phase_increase2.png, id=67, 719.68875pt x 464.4853pt>
+File: BER_phase_increase2.png Graphic file (type png)
+
+<use BER_phase_increase2.png>
+Package pdftex.def Info: BER_phase_increase2.png used on input line 184.
+(pdftex.def)             Requested size: 467.79214pt x 301.91187pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 193--194
+
+ []
+
+(./Rapport.bbl [6 <./BER_phase_increase2.png (PNG copy)>]) [7] (./Rapport.aux) 
+) 
 Here is how much of TeX's memory you used:
- 5408 strings out of 493303
- 79492 string characters out of 6139924
- 156351 words of memory out of 5000000
- 8768 multiletter control sequences out of 15000+600000
- 11711 words of font info for 46 fonts, out of 8000000 for 9000
+ 5418 strings out of 493303
+ 79755 string characters out of 6139924
+ 156369 words of memory out of 5000000
+ 8777 multiletter control sequences out of 15000+600000
+ 11542 words of font info for 45 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 39i,18n,47p,513b,413s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex
-10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb
-></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr
-/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/
-texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/typ
-e1/public/amsfonts/cm/cmtt12.pfb>
-Output written on Rapport.pdf (6 pages, 456432 bytes).
+ 39i,18n,47p,607b,413s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr
+/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share
+/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texli
+ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmti12.pfb>
+Output written on Rapport.pdf (7 pages, 514120 bytes).
 PDF statistics:
- 103 PDF objects out of 1000 (max. 8388607)
- 58 compressed objects within 1 object stream
+ 106 PDF objects out of 1000 (max. 8388607)
+ 59 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 86 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 96 words of extra memory for PDF output out of 10000 (max. 10000000)
 

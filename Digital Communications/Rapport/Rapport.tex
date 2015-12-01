@@ -24,7 +24,11 @@
 %Abstract
 \section*{Abstract}
 In this report, we investigate the influence of mutlitple parameters in a simulated QPSK radio communication channel.
-First, we show how the bit error rate varies with the signal-to-noise ratio in a perfectly synchronized environment. Then we study how synchronization and phase estimation modify the BER, how theses algorithms behave under AWGN and how they are influenced by the training sequence.
+First, we show how the bit error rate varies with the signal-to-noise ratio in a perfectly synchronized environment. 
+
+Then we study how synchronization and phase estimation modify the BER, how theses algorithms behave under AWGN and how they are influenced by the training sequence.
+
+Finally, we examine how a phase increase deteriorates the BER and how it can be reduced with differential demodulation.
 
 %-----------------------------------------------------------------------------------
 %Partie 1
@@ -44,7 +48,7 @@ p_{b}=Q(\sqrt{\frac{2E_{b}}{N_{0}}})
 \end{equation}
 
 \subsection{Simulation results and comparison}
-In order to simulate a environment with perfect synchronization, we forced the value of $t_{samp}$ which equals to the samples coming from the guards bits and the delay caused by the matched filter. The phase offset is set to $0$.
+In order to simulate an environment with perfect synchronization, we forced the value of $t_{samp}$ which equals to the samples coming from the guards bits and the delay caused by the matched filter. The phase offset is set to $0$.
 \begin{figure}[ht!]
 \centering
 \begin{center}
@@ -82,7 +86,7 @@ For a SNR of $5dB$, we created errors in synchronization and phase estimation to
 
 Figure \ref{BER_sync} shows that one single error in the synchronization is catastrophic, the BER is multiplyed by 2. With a shift of 2 samples, the BER is 10 times higher.\\
 
-Figure \ref{BER_phase} shows that phase estimation can greatly increase the BER. However, for small error (typically less than 0.1 rad) the loss is acceptable. To better understand the influence of a phase error on the BER, we can look at the constellation on Figure \ref{Constellation}. We can see that when we increase the noise power, a lot of samples are detected near a border of a decision region. Therfore, a phase estimation error can easily put the sample in a wrong region.
+Figure \ref{BER_phase} shows that phase estimation can greatly increase the BER. However, for small error (typically less than 0.1 rad) the loss is acceptable. To better understand the influence of a phase error on the BER, we can look at the constellation on Figure \ref{Constellation}. We can see that when we increase the noise power, a lot of samples are detected near a border of a decision region. Therefore, a phase estimation error can easily move the sample in a wrong region thus creating detection errors.
 
 \begin{figure}[ht]
 \subfloat[$SNR=0$]{\includegraphics[width=0.35\textwidth]{Constellation_SNR0.png}} 
@@ -94,9 +98,9 @@ Figure \ref{BER_phase} shows that phase estimation can greatly increase the BER.
 
 
 \subsection{Synchronization and phase estimation under AWGN}
-We implemented the recommanded synchronization algorithm (maximum cross-correlation between the filtered signal and a copy af the training sequence). Figure \ref{SE} shows that this algorithm is very resilient to the noise, for a reasonable SNR errors never occur. However, one should take into account that we used a small window (around 6 symbols) centered on the real value. In a real environment we would need another sytem to position the window (like a power detector). \\
+We implemented the recommanded synchronization algorithm (maximum cross-correlation between the filtered signal and a copy of the training sequence). Figure \ref{SE} shows that this algorithm is very resilient to the noise. For a reasonable SNR, errors never occur. However, one should take into account that we used a small window (around 6 symbols) centered on the real value. In a real environment we would need another sytem to position the window (like a power detector). \\
 
-In order to estimate the phase, we searched for the angle that would minimize the norm of the difference between the rotated signal and the training sequence. We can see on Figure \ref{SE} that the estimate is quite sensible to noise. But, as stated before, a phase error of less than 0.1 rad has a resonable effect on the BER. It could be improved by using another algorithm, or a phase-locked loop.
+In order to estimate the phase, we searched for the angle that would minimize the norm of the difference between the rotated signal and the training sequence. We can see on Figure \ref{PE} that the estimate is quite sensible to noise. But, as stated before, a phase error of less than 0.1 rad has a resonable effect on the BER. It could be improved by using another algorithm, or a phase-locked loop.
 
 
 \begin{figure}[ht]
@@ -120,7 +124,7 @@ In order to estimate the phase, we searched for the angle that would minimize th
 \subsection{Influence of the training sequence}
 We computed the synchronization and phase estimation errors when changing the number of training bits at a fixed SNR of 0. Figure \ref{TSE} shows that with a training sequence of more than 20 bits, we have less than 10\% chance of having a synchronization error.\\
 
-For the phase estimation, if we want less than 0.1 rad deviation as we concluded before, we need at least 50 training bits. With a fixed sequence of 1000 data bits, this would corresponds to a 5\% overhead.
+For the phase estimation, if we want less than 0.1 rad deviation, as we concluded before, we need at least 50 training bits. With a fixed sequence of 1000 data bits, this would corresponds to a 5\% overhead.
 
 \begin{figure}[ht]
 \begin{minipage}[c]{.45\linewidth}
@@ -153,13 +157,42 @@ To improve the training sequence, we need to find one that has an autocorrelatio
 %Partie 2
 \newpage
 \section{Differential modulation}
+\subsection{Influence of a linear phase increase}
+First, we added a linear phase increase during the transmission of the block. This phase varies from $0$ to $\frac{\pi}{4}$. It is a modelisation of a small frequency offset on the local oscillator. Here we chose 50 training bits in order to satisfy previous requirements. With this phase increase, we can expect the phase detection to select a correct phase for the training bits. However, as the phase increase along the data symbol sequence, more and more errors will occur. For the last symbol, the $\frac{\pi}{4}$ phase shift should result in a 50\% probability of error a QPSK channel.\\
 
+Figure \ref{BERphase} shows that such a phase increase greatly deteriorate the channel performances.
+
+\begin{figure}[ht!]
+\centering
+\begin{center}
+\includegraphics[scale=0.50]{BER_phase_increase.png}
+\caption{BER comparison under phase increase}
+\label{BERphase}
+\end{center}
+\end{figure}
+
+\subsection{Differential modulation/demodulation}
+In order to alleviate the phase increase effect, we can think to implement a differential modulator. Such a demodulation scheme would only rely on the phase shift from the previous symbol to detect the transmitted bits instead of the phase shit from the first symbol of the block. We can expect this to greatly alleviate the phase shift increase as in our model, this phase increase is slow so the phase is almost constant between two symbols.\\
+
+The Figure \ref{BERphase2} shows that, as expected, the differential modulation solves this issue for high SNR. We can also note that differential QPSK under phase increase gives worse BER than QPSK without the phase increase. It could still be intersting to solve this frequency offset in another way.
+
+
+
+\begin{figure}[ht!]
+\centering
+\begin{center}
+\includegraphics[scale=0.65]{BER_phase_increase2.png}
+\caption{Differential modulation performances}
+\label{BERphase2}
+\end{center}
+\end{figure}
 
 %---------------------------------------------------------------------------------
 %Conclusion
 \section*{Conclusion}
-\vspace{1cm}
-jflsdjqfmljqskldj
+To conclude this analysis and simulation of a QPSK signal, we can say that we were able to simulate a basic QPSK channel composed of a transmitter and a receiver. The results from these simulations allowed us to verify basic results of QPSK communication. Moreover, we dealed with synchronization and phase estimation which are common issues of wireless communication and we made basic test to see how differential modulation can solve some of this problems.\\
+
+This study, however, only used a simple AWGN channel. Further research on QPSK communication should focus on modeling and simulating more complex channels with fading.
 
 %---------------------------------------------------------------------------------------
 %Appendix
@@ -168,22 +201,6 @@ jflsdjqfmljqskldj
 %References
 \bibliographystyle{plain}
 \bibliography{report_biblio}
-
-%------------------------------------------------------------------------------------
-%Matlab code
-\clearpage
-\renewcommand{\thesubsection}{\arabic{subsection}}
-\section*{Matlab Code}
-\setcounter{subsection}{0}
-\subsection{Detect.m}
-\begin{verbatim}
-CODE
-\end{verbatim}
-
-
-
-
-
 
 %---------------------------------------------------------------------------------------------------------
 \end{document}
