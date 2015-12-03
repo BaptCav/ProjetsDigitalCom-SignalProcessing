@@ -181,7 +181,7 @@ Fig.~\ref{BERphase2} shows that, as expected, the differential modulation solves
 \begin{figure}[ht!]
 \centering
 \begin{center}
-\includegraphics[scale=0.65]{BER_phase_increase2.png}
+\includegraphics[scale=0.55]{BER_phase_increase2.png}
 \caption{Differential modulation performances}
 \label{BERphase2}
 \end{center}
@@ -194,12 +194,16 @@ To conclude this analysis and simulation of a QPSK signal, we can say that we we
 
 This study, however, only used a simple AWGN channel. Further research on QPSK communication should focus on modeling and simulating more complex channels with fading.
 
+%References
+\bibliographystyle{plain}
+\bibliography{report_biblio}
+
 %---------------------------------------------------------------------------------------
 %Appendix
 \appendix
 
 \section*{Matlab code}
-In this appendix we would only add functions we created and implemented for this project,the two last functions : diff_qpsk and diff_detect  are the functions we created in order to implement differential modulation. More information on our project can be found on our github repository : https://github.com/BaptCav/ProjetsDigitalCom-SignalProcessing/tree/master/Digital\%20Communications .
+In this appendix we would only add functions we created and implemented for this project,the two last functions : diff\_qpsk and diff\_detect  are the functions we created in order to implement differential modulation. More information on our project can be found on our github repository : github.com/BaptCav/ProjetsDigitalCom-SignalProcessing/tree/master/Digital\%20Communications
 \subsection*{qpsk.m}
 \begin{verbatim}
 function d = qpsk(b)
@@ -293,7 +297,7 @@ t_samp=t_start+tsamp-1;
 
 \end{verbatim}
 
-\subsection*{phase_estimation.m}
+\subsection*{phase\_estimation.m}
 \begin{verbatim}
 function phihat = phase_estimation(r, b_train)
 % phihat = phase_estimation(r, b_train)
@@ -377,7 +381,7 @@ end
 \end{verbatim}
 
 
-\subsection*{diff_qpsk.m}
+\subsection*{diff\_qpsk.m}
 \begin{verbatim}
 function d = diff_qpsk(b)
 % Differential QPSK modulation
@@ -389,7 +393,7 @@ for symbol = 2:length(d)
 end
 \end{verbatim}
 
-\subsection*{diff_detect.m}
+\subsection*{diff\_detect.m}
 \begin{verbatim}
 function bhat = diff_detect(r_diff)
 % Differential QPSK demodulation
@@ -421,9 +425,6 @@ for i= 1:n
 end
 
 \end{verbatim}
-%References
-\bibliographystyle{plain}
-\bibliography{report_biblio}
 
 %---------------------------------------------------------------------------------------------------------
 \end{document}
